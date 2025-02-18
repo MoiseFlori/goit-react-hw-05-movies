@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getTrendingMovies } from '../../services/fetchApi';
 import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
+import PropTypes from 'prop-types'
 
 const Home = () => {
   const [movie, setMovie] = useState([]);
@@ -34,5 +35,9 @@ const Home = () => {
     </div>
   );
 };
+
+Home.propTypes = {
+  movie: PropTypes.array
+}
 
 export default Home;

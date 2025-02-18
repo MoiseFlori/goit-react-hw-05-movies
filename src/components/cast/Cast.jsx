@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Cast.module.css';
 import noImageAvailable from '../../images/no-image-available.jpg';
+import PropTypes from 'prop-types'
 
 const Cast = ({ cast }) => {
   return (
@@ -30,4 +31,7 @@ const Cast = ({ cast }) => {
   );
 };
 
+Cast.propTypes = {
+  cast: PropTypes.array
+}
 export default Cast;

@@ -1,8 +1,12 @@
+import React, { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from './home/Home';
-import { MovieDetails } from './movieDetails/MovieDetails';
-import Movies from './movies/Movies';
 import Navbar from './navbar/Navbar';
+import Loader from './loader/Loader';
+
+
+const Home = lazy(() => import('./home/Home'));
+const MovieDetails = lazy(() => import('./movieDetails/MovieDetails'));
+const Movies = lazy(() => import('./movies/Movies'));
 
 export const App = () => {
   return (
@@ -10,11 +14,13 @@ export const App = () => {
       <nav>
         <Navbar />
       </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/movies" element={<Movies />} />
-        <Route path="/movies/:id" element={<MovieDetails />} />
-      </Routes>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/movies/:id" element={<MovieDetails />} />
+        </Routes>
+      </Suspense>
     </div>
   );
 };

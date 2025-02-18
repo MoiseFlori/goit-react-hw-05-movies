@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Reviews.module.css';
 import '../../common.css';
+import PropTypes from 'prop-types';
 
 const Reviews = ({ reviews }) => {
   return (
@@ -18,10 +19,14 @@ const Reviews = ({ reviews }) => {
           ))}
         </ul>
       ) : (
-        <p className='notFound'>No reviews available for this movie.</p>
+        <p className="notFound">No reviews available for this movie.</p>
       )}
     </div>
   );
+};
+
+Reviews.propTypes = {
+  reviews: PropTypes.array,
 };
 
 export default Reviews;

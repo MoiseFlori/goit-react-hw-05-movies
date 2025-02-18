@@ -3,6 +3,7 @@ import SearchBar from '../searchBar/SearchBar';
 import { searchMovies } from '../../services/fetchApi';
 import MoviesList from '../../pages/MoviesList';
 import Loader from '../loader/Loader';
+import PropTypes from 'prop-types';
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
@@ -38,5 +39,13 @@ const Movies = () => {
     </div>
   );
 };
+
+Movies.propTypes = {
+  movies: PropTypes.array,
+  error: PropTypes.string,
+  hasSearched: PropTypes.bool,
+  isLoading: PropTypes.bool,
+};
+
 
 export default Movies;

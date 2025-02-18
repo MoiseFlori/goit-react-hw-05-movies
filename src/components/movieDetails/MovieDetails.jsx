@@ -5,8 +5,9 @@ import Cast from '../cast/Cast';
 import Reviews from '../reviews/Reviews';
 import Loader from '../loader/Loader';
 import styles from './MovieDetails.module.css';
+import PropTypes from 'prop-types'
 
-export const MovieDetails = () => {
+const MovieDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [movie, setMovie] = useState(null);
@@ -117,3 +118,14 @@ export const MovieDetails = () => {
     </>
   );
 };
+
+MovieDetails.propTypes = {  
+  movie: PropTypes.object,
+  cast: PropTypes.array,
+  reviews: PropTypes.array,
+  showCast: PropTypes.bool,
+  showReviews: PropTypes.bool,
+  isLoading: PropTypes.bool
+}
+
+export default MovieDetails;
