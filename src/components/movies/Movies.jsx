@@ -24,7 +24,7 @@ const Movies = () => {
       setError('An error occurred while fetching movies.');
       console.error(err);
     } finally {
-      setIsLoading(false); // Oprim încărcarea indiferent de rezultat
+      setIsLoading(false); 
     }
   };
 
