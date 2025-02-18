@@ -1,0 +1,78 @@
+.detailsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 20px;
+  border: 2px solid rgb(74, 126, 74);
+  padding: 5px;
+  background-color: rgb(228, 224, 224)
+}
+
+.goBackButton {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(74, 126, 74);
+  color: white;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 40px;
+
+}
+
+.poster {
+  width: 300px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(74, 126, 74);
+  text-shadow: 1px 1px 1px #000;
+}
+
+.category {
+  font-size: 24px;
+  color: rgb(74, 126, 74);
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.overview,
+.genres,
+.rating {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.additionalInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.buttonInfo {
+  width: 80px;
+  height: 50px;
+  background-color: rgb(74, 126, 74);
+  color: white;
+  border-radius: 5px;
+}
+
+.titleInfo {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(74, 126, 74);
+  text-shadow: 1px 1px 1px #000;
+
+}

@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.navList a {
+  font-size: 24px;
+  color: rgb(55, 119, 55);
+  text-shadow: 1px 1px 1px #727070;
+  font-weight: 500;
+}
+
+.navList a:hover {
+  background-color: rgb(74, 126, 74);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}

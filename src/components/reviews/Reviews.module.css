@@ -1,0 +1,19 @@
+.reviews {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.reviewsList {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewContent {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #2f6d46;
+    border-radius: 5px;
+}
+

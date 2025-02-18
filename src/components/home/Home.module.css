@@ -1,0 +1,24 @@
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homeTitle{
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  color: rgb(74, 126, 74);
+  text-shadow: 1px 1px 1px #000;
+}
+
+.movieItem{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.movieItem:hover{
+  background-color: #cbeccb;
+}
+

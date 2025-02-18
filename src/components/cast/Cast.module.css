@@ -1,0 +1,23 @@
+.castList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.castItem{
+  margin: 10px;
+  text-align: center;
+
+}
+
+.castImage{
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.name,.character{
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 5px;
+}
