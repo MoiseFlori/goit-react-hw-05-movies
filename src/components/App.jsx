@@ -4,9 +4,11 @@ import Navbar from './navbar/Navbar';
 import Loader from './loader/Loader';
 
 
+
 const Home = lazy(() => import('./home/Home'));
 const MovieDetails = lazy(() => import('./movieDetails/MovieDetails'));
 const Movies = lazy(() => import('./movies/Movies'));
+const ErrorPage = lazy(() => import('../pages/errorPage/ErrorPage'));
 
 export const App = () => {
   return (
@@ -19,6 +21,7 @@ export const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/movies/:id" element={<MovieDetails />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Suspense>
     </div>
